@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="home.css" rel ="stylesheet">
+    <header>
+        <nav>
+            <li><a href="">Logout</a></li>
+          </ul>
+        </nav>
+      </header>
+  <title>Musicalfy</title>
+  
+<head>
+<body style="background-image:url('https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg'); background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;">
+
+
+
+<div style ="margin: 100px; border: 5px white; text-align:center; color:white">
+    <h1><b>Musicalfy</b></h1>
+    <img src="data:image/jpeg;base64,{{ img_data }}" alt="img_data"  id="imgslot"/>
+    <img src="data:image/jpeg;base64,{{ img_data2 }}" alt="img_data"  id="imgslot"/>
+
+    <hr style="width:25%;height:2px;color:white;margin:30px 620px;">
+    <h2>Trends</h2>
+    <div class="container">
+        <div class="row" >
+          <div class="col" style="margin: 25px; padding: 10px;border:5 px white;color:white;background: rgb(180, 180, 180); opacity:0.85;">
+                <h3>Genres</h3>
+                {{ trend_genre }}
+          </div>
+          <div class="col" style="margin: 25px; padding: 10px;border:5 px white;color:white;background: rgb(180, 180, 180); opacity:0.85;">
+            <h3>Artists</h3>
+            {{ trend_artist }}
+          </div>
+        </div>
+        <div class="row" >
+            <div class="col" style="margin: 25px; padding: 10px;border:5 px white;color:white;background: rgb(180, 180, 180); opacity:0.85;">
+                <h3>Popularity</h3>
+                {{ avg_popularity }}
+          </div>
+          <div class="col" style="margin: 25px; padding: 10px;border:5 px white;color:white;background: rgb(180, 180, 180); opacity:0.85;">
+            <h3>Favorite Artists</h3>
+            {{ most_artist }}
+        </div>
+        </div>
+        <div class="row" >
+          <div class="col" style="margin: 25px; padding: 10px;border:5 px white;color:white;background: rgb(180, 180, 180); opacity:0.85;">
+              <h3>Energy</h3>
+              {{ energy_str }}
+        </div>
+        <div class="col" style="margin: 25px; padding: 10px;border:5 px white;color:white;background: rgb(180, 180, 180); opacity:0.85;">
+          <h3>Danceability</h3>
+          {{ dance_str }}
+      </div>
+      </div>
+      <div class="row" >
+        <div class="col" style="margin: 25px; padding: 10px;border:5 px white;color:white;background: rgb(180, 180, 180); opacity:0.85;">
+            <h3>Tempo</h3>
+            {{ tempo_str }}
+      </div>
+      <div class="col" style="margin: 25px; padding: 10px;border:5 px white;color:white;background: rgb(180, 180, 180); opacity:0.85;">
+        <h3>Loudness</h3>
+        {{ loudness_str }}
+    </div>
+    </div>
+    </div>
+    <hr style="width:25%;height:2px;color:white;margin:30px 620px;">
+  <div style="margin: 25px; text-align:center">
+<div style="padding: 15px">
+<h3>Recently Played Songs<h3>
+{% for table in tables %}
+
+{{ table|safe }}
+{% endfor %}
+<h3>Most Played Songs</h3>
+{% for table in tables1 %}
+
+{{ table|safe }}
+{% endfor %}
+</div>
+</div>
+<img src="https://developer.spotify.com/images/guidelines/design/logo.png" alt="Spotify Logo">
+</div>
+</body>
+</html>

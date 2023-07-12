@@ -1,0 +1,225 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background and text colors */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: FreeMono, monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Add some spacing and center content in the header */
+header {
+  background-color: #111;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: FreeMono, monospace;
+  z-index: 999;
+  padding: 20px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+a:link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:active {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+h1 {
+  color: #ffffff;
+  letter-spacing: 0;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-family: Superior title, Times New Roman, sans-serif;
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 88px;
+  text-align: center;
+}
+h2 {
+  color: #ffffff;
+  letter-spacing: 0;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-family: Superior title, Times New Roman, sans-serif;
+  font-weight: 400;
+  line-height: 88px;
+}
+.project_title {
+  font-size: 62px;
+  margin-top: 80px;
+  margin-bottom: 5px;
+  line-height: 70px;
+}
+h3 {
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Superior title, Times New Roman, sans-serif;
+  font-weight: 400;
+}
+
+.navbar-logo {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin-right: 20px;
+}
+
+.navbar-menu li:last-child {
+  margin-right: 0;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  color: #ffcc00;
+}
+
+/* Style the hero section */
+#hero {
+  background-color: #111;
+  padding: 100px 0;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Style the sections */
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+li h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style the separators */
+.separator {
+  height: 2px;
+  background-color: #666;
+  margin: 40px 0;
+}
+
+/* Style the footer */
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+iframe {
+  display: block;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #000000;
+}

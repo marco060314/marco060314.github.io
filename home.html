@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .element {
+      font-size: 100px;
+    }
+
+    .typed-cursor {
+      font-size: 5rem;
+      opacity: 1;
+    }
+  </style>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+    <title>My Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar-logo">Marco Wang</div>
+        <ul class="navbar-menu">
+          <li><a href="about.html">About</a></li>
+          <li><a href="home.html#projects">Projects</a></li>
+          <li><a href="home.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div class="container">
+        <span
+          id="typed-text"
+          style="
+            font-family: Superior title, Times New Roman, sans-serif;
+            font-size: 80px;
+            font-weight: 400;
+          "
+        ></span>
+        <script>
+          var typed = new Typed("#typed-text", {
+            strings: ["Hi, I'm Marco Wang"],
+            typeSpeed: 80,
+          });
+        </script>
+        <p style="padding-top: 35px">
+          I'm a high school student in the Bay Area with a passion for creating
+          web apps with unique functions.
+        </p>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container" style="text-align: center">
+        <ul class="project-list">
+          <a href="musicalfy.html">
+            <li style="padding: 5px">
+              <h2 class="project_title">Musicalfy</h2>
+              <p>Spotify API web app</p>
+              <img
+                src="musicalfy.png"
+                alt="musicalfy"
+                width="500"
+                height="auto"
+              />
+            </li> </a
+          >\
+          <a href="flappybirdNFT.html">
+            <li style="padding: 5px">
+              <h2 class="project_title">Flappy Bird NFT</h2>
+              <p>NFT connected Flappy Bird game</p>
+              <img
+                src="flappybirdzz.png"
+                alt="Flappy Bird NFT game"
+                width="500"
+                height="auto"
+              />
+            </li>
+          </a>
+          <a href="investing.html">
+            <li style="padding: 5px">
+              <h2 class="project_title">Stock Investment Articles</h2>
+              <p>Investment advice and analysis</p>
+              <img
+                src="stocks.png"
+                alt="stock investment articles"
+                width="500"
+                height="auto"
+              />
+            </li>
+          </a>
+          <li style="padding: 5px">
+            <h2 class="project_title">ML Emotion Identification</h2>
+            <p>Algorithm identifying emotions in pictures</p>
+            <img
+              src="machine_learning.png"
+              alt="Machine Learning Emotions Project"
+              width="500"
+              height="auto"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>
+          Feel free to reach out to me if you have any questions or
+          collaboration opportunities.
+        </p>
+        <p>Email: marco060314@gmail.com</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Marco Wang - My Personal Website</p>
+    </footer>
+  </body>
+</html>
